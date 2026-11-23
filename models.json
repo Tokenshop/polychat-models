@@ -1,19 +1,20 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-22",
-  "defaultModelId": "qwen3-1.7b",
+  "updated": "2026-11-23",
+  "defaultModelId": "qwen3.5-2b",
   "models": [
     {
-      "id": "qwen3-1.7b",
-      "name": "Qwen 3",
-      "params": "1.7B",
+      "id": "qwen3.5-2b",
+      "name": "Qwen 3.5",
+      "params": "2B",
       "quant": "4-bit",
-      "repo": "mlx-community/Qwen3-1.7B-4bit",
-      "revision": "3b1b1768f8f8cf8351c712464f906e86c2b8269e",
-      "sizeBytes": 984015687,
-      "architecture": "qwen3",
+      "repo": "mlx-community/Qwen3.5-2B-4bit",
+      "revision": "674aaa7240b91e8012fcad5d791b7dfe5ba90207",
+      "sizeBytes": 1749081927,
+      "architecture": "qwen3_5",
       "capabilities": [
         "text",
+        "vision",
         "reasoning"
       ],
       "tags": [
@@ -21,22 +22,22 @@
         "Writing",
         "Reason"
       ],
-      "description": "Versatile all-rounder: writing, multilingual chat, logic and code, with optional step-by-step thinking.",
+      "description": "Versatile all-rounder: writing, multilingual chat, logic and code, with optional step-by-step thinking. Understands images once photo support arrives.",
       "license": "Apache-2.0",
-      "minRamGB": 4,
+      "minRamGB": 6,
       "minAppVersion": "1.1.0",
       "pro": false,
       "vendor": "qwen"
     },
     {
-      "id": "granite-4.0-micro",
-      "name": "Granite 4.0",
+      "id": "granite-4.1-3b",
+      "name": "Granite 4.1",
       "params": "3B",
       "quant": "4-bit",
-      "repo": "mlx-community/granite-4.0-h-micro-4bit",
-      "revision": "0a29e17503da7de371af61a0a532853810637627",
-      "sizeBytes": 1806622893,
-      "architecture": "granitemoehybrid",
+      "repo": "mlx-community/granite-4.1-3b-4bit",
+      "revision": "b1b476b5a17c46b7d6cd663b4a8ed44b66720aef",
+      "sizeBytes": 2134391329,
+      "architecture": "granite",
       "capabilities": [
         "text"
       ],
@@ -76,14 +77,14 @@
       "vendor": "mistral"
     },
     {
-      "id": "gemma-3-1b",
-      "name": "Gemma 3",
-      "params": "1B",
+      "id": "gemma-4-e2b",
+      "name": "Gemma 4",
+      "params": "E2B",
       "quant": "4-bit",
-      "repo": "mlx-community/gemma-3-1b-it-qat-4bit",
-      "revision": "15fed4eafb456c6fcb2a1165f19ac609670ed14b",
-      "sizeBytes": 771863021,
-      "architecture": "gemma3_text",
+      "repo": "mlx-community/gemma-4-e2b-it-4bit",
+      "revision": "238767527555cb75a05732a84dff5d6ba0dd6809",
+      "sizeBytes": 3583088661,
+      "architecture": "gemma4",
       "capabilities": [
         "text"
       ],
@@ -92,9 +93,9 @@
         "Multilingual",
         "Writing"
       ],
-      "description": "Google's lightweight model, good for writing, rewording and translation.",
+      "description": "Google's newest small model: warm, detailed answers, strong at writing and translation.",
       "license": "Gemma Terms of Use",
-      "minRamGB": 4,
+      "minRamGB": 8,
       "minAppVersion": "1.1.0",
       "pro": false,
       "vendor": "gemma"
@@ -168,32 +169,6 @@
       "minAppVersion": "1.1.0",
       "pro": false,
       "vendor": "phi"
-    },
-    {
-      "id": "qwen3.5-2b",
-      "name": "Qwen 3.5",
-      "params": "2B",
-      "quant": "4-bit",
-      "repo": "mlx-community/Qwen3.5-2B-4bit",
-      "revision": "674aaa7240b91e8012fcad5d791b7dfe5ba90207",
-      "sizeBytes": 1749081927,
-      "architecture": "qwen3_5",
-      "capabilities": [
-        "text",
-        "vision",
-        "reasoning"
-      ],
-      "tags": [
-        "General",
-        "Multilingual",
-        "Writing"
-      ],
-      "description": "Newer Qwen with strong multilingual writing. Understands images once photo support arrives.",
-      "license": "Apache-2.0",
-      "minRamGB": 6,
-      "minAppVersion": "1.1.0",
-      "pro": false,
-      "vendor": "qwen"
     },
     {
       "id": "lfm2.5-1.2b",
