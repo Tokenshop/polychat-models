@@ -12,13 +12,162 @@
       "revision": "3b1b1768f8f8cf8351c712464f906e86c2b8269e",
       "sizeBytes": 984015687,
       "architecture": "qwen3",
-      "capabilities": ["text", "reasoning"],
-      "tags": ["General", "Writing", "Reason"],
-      "description": "Versatile all-rounder: writing, multilingual chat, logic and code. Optional step-by-step reasoning.",
+      "capabilities": [
+        "text",
+        "reasoning"
+      ],
+      "tags": [
+        "General",
+        "Writing",
+        "Reason"
+      ],
+      "description": "Versatile all-rounder: writing, multilingual chat, logic and code, with optional step-by-step thinking.",
       "license": "Apache-2.0",
       "minRamGB": 4,
       "minAppVersion": "1.1.0",
-      "pro": false
+      "pro": false,
+      "vendor": "qwen"
+    },
+    {
+      "id": "granite-4.0-micro",
+      "name": "Granite 4.0",
+      "params": "3B",
+      "quant": "4-bit",
+      "repo": "mlx-community/granite-4.0-h-micro-4bit",
+      "revision": "0a29e17503da7de371af61a0a532853810637627",
+      "sizeBytes": 1806622893,
+      "architecture": "granitemoehybrid",
+      "capabilities": [
+        "text"
+      ],
+      "tags": [
+        "Research",
+        "Writing"
+      ],
+      "description": "IBM's compact business model: precise, factual answers and clear summaries.",
+      "license": "Apache-2.0",
+      "minRamGB": 6,
+      "minAppVersion": "1.1.0",
+      "pro": false,
+      "vendor": "granite"
+    },
+    {
+      "id": "ministral-3-3b",
+      "name": "Ministral 3",
+      "params": "3B",
+      "quant": "4-bit",
+      "repo": "mlx-community/Ministral-3-3B-Instruct-2512-4bit",
+      "revision": "a962dcb09eee4169c890e544c9eb938f1113fdee",
+      "sizeBytes": 2779152776,
+      "architecture": "mistral3",
+      "capabilities": [
+        "text"
+      ],
+      "tags": [
+        "General",
+        "Multilingual",
+        "Reason"
+      ],
+      "description": "Mistral's small model with strong reasoning and multilingual answers.",
+      "license": "Apache-2.0",
+      "minRamGB": 8,
+      "minAppVersion": "1.1.0",
+      "pro": false,
+      "vendor": "mistral"
+    },
+    {
+      "id": "gemma-3-1b",
+      "name": "Gemma 3",
+      "params": "1B",
+      "quant": "4-bit",
+      "repo": "mlx-community/gemma-3-1b-it-qat-4bit",
+      "revision": "15fed4eafb456c6fcb2a1165f19ac609670ed14b",
+      "sizeBytes": 771863021,
+      "architecture": "gemma3_text",
+      "capabilities": [
+        "text"
+      ],
+      "tags": [
+        "Creative",
+        "Multilingual",
+        "Writing"
+      ],
+      "description": "Google's lightweight model, good for writing, rewording and translation.",
+      "license": "Gemma Terms of Use",
+      "minRamGB": 4,
+      "minAppVersion": "1.1.0",
+      "pro": false,
+      "vendor": "gemma"
+    },
+    {
+      "id": "smollm3-3b",
+      "name": "SmolLM3",
+      "params": "3B",
+      "quant": "4-bit",
+      "repo": "mlx-community/SmolLM3-3B-4bit",
+      "revision": "d3a7e0594d6642dbcfb7d149bed8b0bdf49f95ce",
+      "sizeBytes": 1747380812,
+      "architecture": "smollm3",
+      "capabilities": [
+        "text"
+      ],
+      "tags": [
+        "General",
+        "Writing"
+      ],
+      "description": "Hugging Face's fully open model: a well-rounded everyday assistant.",
+      "license": "Apache-2.0",
+      "minRamGB": 6,
+      "minAppVersion": "1.1.0",
+      "pro": false,
+      "vendor": "smollm"
+    },
+    {
+      "id": "llama-3.2-3b",
+      "name": "Llama 3.2",
+      "params": "3B",
+      "quant": "4-bit",
+      "repo": "mlx-community/Llama-3.2-3B-Instruct-4bit",
+      "revision": "7f0dc925e0d0afb0322d96f9255cfddf2ba5636e",
+      "sizeBytes": 1824825759,
+      "architecture": "llama",
+      "capabilities": [
+        "text"
+      ],
+      "tags": [
+        "Research",
+        "Writing"
+      ],
+      "description": "Meta's popular open model: friendly explanations and solid writing.",
+      "license": "Llama 3.2 Community License",
+      "minRamGB": 6,
+      "minAppVersion": "1.1.0",
+      "pro": false,
+      "vendor": "llama"
+    },
+    {
+      "id": "phi-4-mini",
+      "name": "Phi-4 mini",
+      "params": "3.8B",
+      "quant": "4-bit",
+      "repo": "mlx-community/Phi-4-mini-instruct-4bit",
+      "revision": "ac1c269cb4222a4e136a3d09edad301056c1f36a",
+      "sizeBytes": 2180067259,
+      "architecture": "phi3",
+      "capabilities": [
+        "text"
+      ],
+      "tags": [
+        "Reason",
+        "Math",
+        "Coding"
+      ],
+      "description": "Microsoft's reasoning-focused small model for math, code and logic.",
+      "license": "MIT",
+      "minRamGB": 8,
+      "minAppVersion": "1.1.0",
+      "pro": false,
+      "vendor": "phi"
     },
     {
       "id": "qwen3.5-2b",
@@ -29,13 +178,22 @@
       "revision": "674aaa7240b91e8012fcad5d791b7dfe5ba90207",
       "sizeBytes": 1749081927,
       "architecture": "qwen3_5",
-      "capabilities": ["text", "vision", "reasoning"],
-      "tags": ["General", "Multilingual", "Writing"],
+      "capabilities": [
+        "text",
+        "vision",
+        "reasoning"
+      ],
+      "tags": [
+        "General",
+        "Multilingual",
+        "Writing"
+      ],
       "description": "Newer Qwen with strong multilingual writing. Understands images once photo support arrives.",
       "license": "Apache-2.0",
       "minRamGB": 6,
       "minAppVersion": "1.1.0",
-      "pro": false
+      "pro": false,
+      "vendor": "qwen"
     },
     {
       "id": "lfm2.5-1.2b",
@@ -46,30 +204,19 @@
       "revision": "dee2f8a2786e6648bb644a7ca40652842490034b",
       "sizeBytes": 663395788,
       "architecture": "lfm2",
-      "capabilities": ["text"],
-      "tags": ["Creative", "Writing"],
+      "capabilities": [
+        "text"
+      ],
+      "tags": [
+        "Creative",
+        "Writing"
+      ],
       "description": "Liquid AI's compact model built for phones: very fast to start and to reply.",
       "license": "LFM Open License v1.0 (commercial use only under $10M annual revenue)",
       "minRamGB": 4,
       "minAppVersion": "1.1.0",
-      "pro": false
-    },
-    {
-      "id": "qwen3.5-0.8b",
-      "name": "Qwen 3.5 Mini",
-      "params": "0.8B",
-      "quant": "4-bit",
-      "repo": "mlx-community/Qwen3.5-0.8B-4bit",
-      "revision": "da28692b5f139cb0ec58a356b437486b7dac7462",
-      "sizeBytes": 652029391,
-      "architecture": "qwen3_5",
-      "capabilities": ["text", "vision"],
-      "tags": ["General"],
-      "description": "The smallest and fastest option, for quick everyday questions on any supported iPhone.",
-      "license": "Apache-2.0",
-      "minRamGB": 4,
-      "minAppVersion": "1.1.0",
-      "pro": false
+      "pro": false,
+      "vendor": "lfm"
     }
   ]
 }

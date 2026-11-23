@@ -46,6 +46,8 @@ for i, m in enumerate(models):
         err(f"{where}: unknown capabilities {sorted(bad)}")
     if "text" not in m.get("capabilities", []):
         err(f"{where}: every model needs the 'text' capability")
+    if "vendor" in m and not re.fullmatch(r"[a-z0-9-]+", str(m["vendor"])):
+        err(f"{where}: vendor must be lowercase letters/digits (e.g. qwen, gemma, llama)")
     if isinstance(m.get("sizeBytes"), int) and m["sizeBytes"] <= 0:
         err(f"{where}: sizeBytes must be positive")
 

@@ -36,3 +36,4 @@ App Store update**.
 | `minRamGB` | Hide the model on iPhones with less RAM than this. |
 | `minAppVersion` | Hide the model on older app versions. |
 | `pro` | Requires PolyChat PRO. |
+| `vendor` | Optional. Picks the logo and colour in the app: `qwen`, `gemma`, `llama`, `deepseek` (others show a generic icon for now). |
